@@ -96,6 +96,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
+# link2sd support
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.d/11link2sd:system/etc/init.d/11link2sd
+
+# custom mount script
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.d/99mount_custom:system/etc/init.d/99mount_custom
+
 # CM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc

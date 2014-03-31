@@ -1,0 +1,13 @@
+#!/system/bin/sh
+#added by link2sd
+LOG=/data/link2sd-11link2sd.log
+[ -d /data/sdext2 ] || mkdir /data/sdext2
+echo "$(date) mounting..." > $LOG
+mount -t ext4 -o rw /dev/block/vold/179:18 /data/sdext2 1>>$LOG 2>>$LOG
+
+mount -t ext4 -o rw /dev/block/mmcblk1p2 /data/sdext2 1>>$LOG 2>>$LOG
+
+mount >> $LOG
+echo "$(date) mount finished" >> $LOG
+chmod 773 /data/dalvik-cache
+

@@ -1,0 +1,9 @@
+#!/system/bin/sh
+
+sleep 50
+mount -o bind /data/sdext2/me.narr8.android /storage/sdcard0/Android/data/me.narr8.android
+mount -o bind /storage/sdcard1/Navigon /storage/emulated/legacy/Navigon
+mount -o bind /storage/sdcard1/Music /storage/sdcard0/Music
+mount -o bind /storage/sdcard1/Movies /storage/sdcard0/Movies
+mount -o bind /storage/sdcard1/Books /storage/sdcard0/Books
+
